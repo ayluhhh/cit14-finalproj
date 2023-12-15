@@ -25,9 +25,56 @@ $(document).ready(function(){
 }
 .button{ display:inline-block;
 }
+	.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-family:'century gothic';
+    }
+
+    .logo {
+      font-size: 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+    }
+
+    .nav-links a:hover {
+      color: #ddd;
+    }
 </style>
 <body>
-
+<nav class="navbar">
+    <a href="#" class="logo">My Website</a>
+    <ul class="nav-links">
+      <li><a href="/cit14-finalproj/index.html#home">Home</a></li>
+      <li><a href="/cit14-finalproj/index.html#portfolio" onclick="scrollToPortfolio()">Portfolio</a></li>
+    </ul>
+  </nav>
+    <br><br>
 <button>Hide/Show Text</button>
 <br>
 <br>
