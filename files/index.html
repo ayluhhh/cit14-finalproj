@@ -29,6 +29,45 @@
   	.link{
   		color:#5B9A8B;
   	}
+	.navbar {
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      display: flex;
+	      justify-content: space-between;
+	      align-items: center;
+	      padding: 10px;
+	      background-color: #333;
+	      color: white;
+	    }
+	
+	    .logo {
+	      font-size: 20px;
+	      text-decoration: none;
+	      color: #fff;
+	    }
+	
+	    .nav-links {
+	      list-style: none;
+	      display: flex;
+	      margin: 0;
+	      padding: 0;
+	    }
+	
+	    .nav-links li {
+	      margin: 0 10px;
+	    }
+	
+	    .nav-links a {
+	      text-decoration: none;
+	      color: #fff;
+	      padding: 5px;
+	    }
+	
+	    .nav-links a:hover {
+	      color: #ddd;
+	    }
 		
 
     </style>
@@ -38,6 +77,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+			<nav class="navbar">
+			    <a href="#" class="logo">My Website</a>
+			    <ul class="nav-links">
+			      <li><a href="/cit14-finalproj/index.html#home">Home</a></li>
+			      <li><a href="/cit14-finalproj/index.html#portfolio" onclick="scrollToPortfolio()">Portfolio</a></li>
+			    </ul>
+			  </nav>
+	<br><br>
     <div class="container">
 		<img src="gandako.jpg" class="img" width="1/0" height="1/0">
         <div class="text">
@@ -46,8 +93,8 @@
         </div>
     </div>
   <div class="link">
-	<p><li> <a href="file:///D:/A-HTML.html">Link A</a></li> </p>
-			<p> <li><a href="file:///D:/B.html">Link B </a></li></p>
+	<p><li> <a href="/cit14-finalproj/A.html">Link A</a></li> </p>
+			<p> <li><a href="/cit14-finalproj/B.html">Link B </a></li></p>
 			<p><li> <a href="https://drive.google.com/drive/folders/1jz23DCAtVhcbaFwpbO9Uchu3iKJO824s">Link External </a></li></p>
 	</div>
 </body>
